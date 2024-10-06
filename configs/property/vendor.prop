@@ -96,7 +96,8 @@ ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.enable_gl_backpressure=1
-debug.sf.enable_hwc_vds=0
+debug.sf.enable_advanced_sf_phase_offset=1
+debug.sf.enable_hwc_vds=1
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=27600000
@@ -208,9 +209,6 @@ ro.vendor.mtk_modem_monitor_support=1
 persist.vendor.md_c2k_cap_dep_check=0
 persist.vendor.radio.telecom.vibrate=0
 
-# Power
-ro.vendor.perf.scroll_opt=true
-
 # IMS
 persist.vendor.ims_support=1
 persist.vendor.mtk_dynamic_ims_switch=1
@@ -236,6 +234,9 @@ ro.crypto.dm_default_key.options_format.version=2
 ro.crypto.volume.metadata.method=dm-default-key
 ro.crypto.volume.options=::v2
 
+# Thermal
+vendor.thermal.config=thermal_info_config.json
+
 # LMK
 ro.lmk.kill_heaviest_task=true
 ro.lmk.kill_timeout_ms=100
@@ -251,10 +252,6 @@ ro.vendor.mtk.sensor.support=yes
 
 # Incremental
 ro.incremental.enable=yes
-
-# HWUI
-debug.hwui.use_hint_manager=true
-debug.hwui.target_cpu_time_percent=30
 
 # SoC
 ro.soc.manufacturer=MediaTek

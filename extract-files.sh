@@ -70,7 +70,7 @@ function blob_fixup {
             # evaluateCaptureConfiguration()
             sed -i "s/\x34\xE8\x87\x40\xB9/\x34\x28\x02\x80\x52/" "$2"
             ;;
-        vendor/lib*/hw/android.hardware.thermal@2.0-impl.so|vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so|vendor/lib*/libmtkcam_stdutils.so)
+        vendor/lib*/hw/vendor.mediatek.hardware.pq@2.13-impl.so|vendor/lib*/libmtkcam_stdutils.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/lib/mediadrm/libwvdrmengine.so|vendor/lib/libwvhidl.so)
