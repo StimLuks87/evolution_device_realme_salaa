@@ -10,6 +10,7 @@
 
 # Display
 /dev/oplus_display                                                                                                     u:object_r:oplus_display_device:s0
+/sys/devices/platform/leds-mt65xx/leds/lcd-backlight(/.*)?                                                             u:object_r:sysfs_leds:s0
 
 # Latency
 /dev/cpu_dma_latency                                                                                                   u:object_r:latency_device:s0

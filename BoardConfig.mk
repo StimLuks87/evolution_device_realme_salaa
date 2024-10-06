@@ -30,7 +30,7 @@ TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a55
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX2155,RMX2155L1,RMX2151L1,RMX2153L1,RMX2156L1,RMX2161L1,RMX2163L1,salaa
+TARGET_OTA_ASSERT_DEVICE := RMX2155,RMX2155L1,RMX2151L1,salaa
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := RM6785
@@ -210,7 +210,8 @@ DEVICE_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/lineage/config/device_framework_matrix.xml \
+    hardware/oplus/vintf/device_framework_matrix.xml
 
 # VNDK
 BOARD_VNDK_VERSION := current

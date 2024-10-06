@@ -60,6 +60,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 # Enable DM file pre-opting to reduce first boot time
 PRODUCT_DEX_PREOPT_GENERATE_DM_FILES := true
 
+# Device ID attestation
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
@@ -106,6 +110,9 @@ PRODUCT_COPY_FILES += \
 # Biometrics
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.oplus
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -188,7 +195,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     libgatekeeper.vendor:64
 
-# GNSS
+# GPS
 PRODUCT_PACKAGES += \
     android.hardware.gnss.measurement_corrections@1.0.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
@@ -199,6 +206,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss-V1-ndk_platform.vendor \
     libcurl.vendor
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
 # Health
 PRODUCT_PACKAGES += \
@@ -311,8 +321,6 @@ PRODUCT_PACKAGES += \
     SalaaSettingsOverlay \
     SalaaSystemUIOverlay \
     SettingsProviderOverlay7 \
-    SettingsProviderOverlayNarzo20Pro \
-    SettingsProviderOverlayNarzo30 \
     TelephonyOverlay \
     TetheringConfigOverlay \
     WifiOverlay
