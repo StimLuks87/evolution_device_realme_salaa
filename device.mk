@@ -21,6 +21,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # ViPER4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+# Oplus-fwk
+$(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
+
 # Priv Keys
 -include vendor/evolution-priv/keys/keys.mk
 
@@ -321,6 +324,8 @@ PRODUCT_PACKAGES += \
     SalaaSettingsOverlay \
     SalaaSystemUIOverlay \
     SettingsProviderOverlay7 \
+    SettingsProviderOverlayNarzo20Pro \
+    SettingsProviderOverlayNarzo30 \
     TelephonyOverlay \
     TetheringConfigOverlay \
     WifiOverlay

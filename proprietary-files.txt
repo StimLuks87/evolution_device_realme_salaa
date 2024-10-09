@@ -1464,17 +1464,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.7.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
-# Engineering - from TECNO-CK9n UP1A.230519.001
-system_ext/app/EngineerMode/EngineerMode.apk|8f64579fe7db633fef0668bd24937d1f32fc433b
-system_ext/lib/libem_support_jni.so|afab3ca5e5bdf8619e66606652a39fac5692d99b
-system_ext/lib64/libem_support_jni.so|21dddde25b7134b186e68052910adf2b4dba8b86
-vendor/bin/em_hidl|bf23d25f7bd6af4bfd9f34c64609e469b8b1d4b2
-vendor/etc/init/em_hidl_user.rc|bdb5893df3e78d2d2adaf72bc7e56dfeee0be308
-vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so|444376addf581bfc66409ad39a73ffe498e4142e
-vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so|a13d422113c5bde4dc8a36336a6436e09cb37b86
-vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so|6cdc256e6559cba5f47b4aa1382d13790e91773c
-vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so|1c170c8e48c5cd52fd0bc903758be03c16e90091
-
 # Fingerprint
 odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 odm/bin/init.oplus.fingerprints.sh
@@ -1643,92 +1632,6 @@ vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so
 vendor/lib64/hw/gps.default.so
 vendor/lib64/libDR.so
 
-# Hotword Enrollment - from RMX2156_11_F.15
--my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
--my_product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4.apk:product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk|4620e6daa921454e4cbfc49910ba175426c18888
-
-# IMS - from TECNO-CK9n UP1A.230519.001
-system_ext/bin/vtservice|59adc81ee1ad1f3fb4942cd6e8e7100325002eb2
-system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
-system_ext/lib64/libcomutils.so|6d9cd979f33ef01cb26861a38a59e76e1c2a3acb
-system_ext/lib64/libimsma.so|932cbe88083fae23b159bf0e3fe17d7efb93495b
-system_ext/lib64/libimsma_adapt.so|754ad1c39fb4dba9d3eb69ac00112e7600d68580
-system_ext/lib64/libimsma_rtp.so|20ee91f090661fb26e6625ad2fef828441956b82
-system_ext/lib64/libimsma_socketwrapper.so|1f9b83322c41e5b0a7b3130f74a38ddb14f578d8
-system_ext/lib64/libmtk_vt_service.so|302d3ab3c5b3fa0107520fe36098b32cd0a8dd96
-system_ext/lib64/libmtk_vt_wrapper.so|af4d486c516c920ea99c362aebbf04180e96035c
-system_ext/lib64/libsignal.so|0f55bb64c660fe4cda2b695121580b054f026e73
-system_ext/lib64/libsink.so|6bd8c55847116a9a37e223ea2a6e5ce1379e53f7
-system_ext/lib64/libsource.so|a9f4156f17c1e403ddf5e1cc602c88a034dc483b
-system_ext/lib64/libvcodec_cap.so|6973253cb2e4ddf365451ed2ac8db9d04085bc4a
-system_ext/lib64/libvcodec_capenc.so|5527525dfcd25169bc380ac53d8181ffa1429c6f
-system_ext/lib64/libvt_avsync.so|632cb05532ef2e022072d91bff3c1ae47c888b7e
-system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|fc3f645734d4e37fa50b77233d63c7b2eb166014
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|aee568e770a3835af2df2262c9dc8bb2911da324
-vendor/bin/hw/vtservice_hidl|047b26f80b338b7d0869840d243eefebe82d56f5
-vendor/etc/init/init.vtservice_hidl.rc|f2e992214ed5bb99c2c2a135cf1f0996dba8a8a0
-vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e7bffb72cf24604109dafcf0019fc
-vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5e228669d2c575e38fc02a13404f31bc22494b87
-
-# IMS
--framework/mediatek-common.jar
--framework/mediatek-framework.jar
-framework/mediatek-gwsd.jar
-framework/mediatek-gwsdv2.jar
--framework/mediatek-ims-base.jar
--framework/mediatek-ims-common.jar
-framework/mediatek-ims-extension-plugin.jar
-framework/mediatek-ims-legacy.jar
--framework/mediatek-telecom-common.jar
--framework/mediatek-telephony-common.jar
-framework/mediatek-wfo-legacy.jar
--framework/oplus-framework-telephony.jar
--framework/oplus-framework.jar
-odm/lib/vendor.oplus.hardware.ims@1.0.so
-odm/lib64/vendor.oplus.hardware.ims@1.0.so
-vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
-vendor/bin/ipsec_mon
-vendor/bin/lbs_hidl_service
-vendor/bin/rcs_volte_stack
-vendor/bin/volte_clientapi_ua
-vendor/bin/volte_imcb
-vendor/bin/volte_imsm_93
-vendor/bin/volte_md_status
-vendor/bin/volte_rcs_ua
-vendor/bin/volte_stack
-vendor/bin/volte_ua
-vendor/bin/xcap
-vendor/etc/init/init.volte_imcb.rc
-vendor/etc/init/init.volte_imsm_93.rc
-vendor/etc/init/init.volte_md_status.rc
-vendor/etc/init/init.volte_stack.rc
-vendor/etc/init/init.volte_ua.rc
-vendor/etc/init/init.xcap.rc
-vendor/etc/init/ipsec_mon.rc
-vendor/etc/init/lbs_hidl_service.rc
-vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
-vendor/etc/init/volte_clientapi_ua.rc
-vendor/etc/init/volte_rcs_ua.rc
-vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
-vendor/lib/libipsec_ims_shr.so
-vendor/lib/librcs_interface.so
-vendor/lib/librcs_volte_core.so
-vendor/lib/libverno.so
-vendor/lib/libvolte_core_shr.so
-vendor/lib/libvolte_xdmc_shr.so
-vendor/lib/libvt_custom.so
-vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
-vendor/lib64/libipsec_ims_shr.so
-vendor/lib64/libmmagent.so
-vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
-vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
-
-# IMS - from RMX2156_11_F.15
--framework/mediatek-telephony-base.jar|168892505929d06405018e1dd007e523d90e94d0
--priv-app/ImsService/ImsService.apk|755cbe94aab80d1c5b98b13a047487d382bfa449
-
 # Kernel Modules
 vendor/etc/init/init.fmradio_drv.rc
 vendor/etc/init/init.gps_drv.rc
@@ -1887,15 +1790,15 @@ vendor/lib64/libvpu5.so
 #vendor/lib64/libMtkOmxCore.so
 #vendor/lib64/libstagefrighthw.so
 
-# NFC - from RMX3085_11_C.12
-odm/etc/init/init.pn8x.nfc.rc|5d568e326250eba9d9f8a555287a969aadc1be1d
-odm/etc/nfc/libnfc-nxp.conf_20682:vendor/etc/libnfc-nxp.conf|d2bc7b3cf536f8f16db67cf67ac06a64548a5f05
-odm/etc/nfc/pnscr/libnfc-nxp-pnscr.conf:odm/etc/libnfc-nxp-pnscr.conf|17d120a63a2d1e63fbb12262807e03c469c2b233
-odm/lib/libpn553_fw.so|a8e29cc3ebb2e0df0fb505fc2da9c69a015680fb
-odm/lib/libpn557_fw.so|5fd4d17960d258563557d47d70c4d9d11a79fd15
-odm/lib/libpnscr2.so|55ef2b499a01f6e202a15449301c741a3818c863
-odm/lib/libsn100u_fw.so|4adda2c9449cdc8f66fc3c653153f8b69c7dc78c
-odm/lib64/libpnscr2.so|173158a03f630a88bdb720066a54029184eea6e6
+# NFC
+odm/etc/init/init.pn8x.nfc.rc
+odm/etc/nfc/libnfc-nxp.conf_20682:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/pnscr/libnfc-nxp-pnscr.conf:odm/etc/libnfc-nxp-pnscr.conf
+odm/lib/libpn553_fw.so
+odm/lib/libpn557_fw.so
+odm/lib/libpnscr2.so
+odm/lib/libsn100u_fw.so
+odm/lib64/libpnscr2.so
 
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
@@ -2300,3 +2203,100 @@ vendor/lib64/libwo.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+
+# Hotword Enrollment
+-my_product/framework/com.android.hotwordenrollment.common.util.jar:system_ext/framework/com.android.hotwordenrollment.common.util.jar
+-my_product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4.apk:product/priv-app/HotwordEnrollmentOKGoogleCORTEXM4/HotwordEnrollmentOKGoogleCORTEXM4.apk
+
+# IMS
+-framework/mediatek-common.jar
+-framework/mediatek-framework.jar
+framework/mediatek-gwsd.jar
+framework/mediatek-gwsdv2.jar
+-framework/mediatek-ims-base.jar
+-framework/mediatek-ims-common.jar
+framework/mediatek-ims-extension-plugin.jar
+framework/mediatek-ims-legacy.jar
+-framework/mediatek-telecom-common.jar
+-framework/mediatek-telephony-common.jar
+framework/mediatek-wfo-legacy.jar
+-framework/oplus-framework-telephony.jar
+-framework/oplus-framework.jar
+odm/lib/vendor.oplus.hardware.ims@1.0.so
+odm/lib64/vendor.oplus.hardware.ims@1.0.so
+vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
+vendor/bin/ipsec_mon
+vendor/bin/lbs_hidl_service
+vendor/bin/rcs_volte_stack
+vendor/bin/volte_clientapi_ua
+vendor/bin/volte_imcb
+vendor/bin/volte_imsm_93
+vendor/bin/volte_md_status
+vendor/bin/volte_rcs_ua
+vendor/bin/volte_stack
+vendor/bin/volte_ua
+vendor/bin/xcap
+vendor/etc/init/init.volte_imcb.rc
+vendor/etc/init/init.volte_imsm_93.rc
+vendor/etc/init/init.volte_md_status.rc
+vendor/etc/init/init.volte_stack.rc
+vendor/etc/init/init.volte_ua.rc
+vendor/etc/init/init.xcap.rc
+vendor/etc/init/ipsec_mon.rc
+vendor/etc/init/lbs_hidl_service.rc
+vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
+vendor/etc/init/volte_clientapi_ua.rc
+vendor/etc/init/volte_rcs_ua.rc
+vendor/etc/vintf/manifest/lbs_hidl_service@1.0.xml
+vendor/lib/libipsec_ims_shr.so
+vendor/lib/librcs_interface.so
+vendor/lib/librcs_volte_core.so
+vendor/lib/libverno.so
+vendor/lib/libvolte_core_shr.so
+vendor/lib/libvolte_xdmc_shr.so
+vendor/lib/libvt_custom.so
+vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
+vendor/lib64/libipsec_ims_shr.so
+vendor/lib64/libmmagent.so
+vendor/lib64/vendor.mediatek.hardware.clientapi@1.0.so
+vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
+
+# IMS
+-framework/mediatek-telephony-base.jar|168892505929d06405018e1dd007e523d90e94d0
+-priv-app/ImsService/ImsService.apk|755cbe94aab80d1c5b98b13a047487d382bfa449
+
+# IMS - from TECNO-CK9n UP1A.231005.007
+system_ext/bin/vtservice|eeb08595c53be9d7a69ba5b677b5604f753eab37
+system_ext/etc/init/init.vtservice.rc|50a2249906edc06059b443513db47a2ddc0490dc
+system_ext/lib64/libcomutils.so|fae6b5fd7628518eaf3e3eadac2133dd83f30839
+system_ext/lib64/libimsma.so|573e9c9f7d6879b7f23f0eb1c2ff12fcad3dd80b
+system_ext/lib64/libimsma_adapt.so|87682d1ecd12331841ce3b9f6eb04822a6725488
+system_ext/lib64/libimsma_rtp.so|25b249764ba9df7d89f3af209f38e4cb4993ddb3
+system_ext/lib64/libimsma_socketwrapper.so|5a26aae9eee36b9e5dc8875aa68b20ced2e1b676
+system_ext/lib64/libmtk_vt_service.so|3ab37e9ccedbdff87daea1f572d1bce3966c040f
+system_ext/lib64/libmtk_vt_wrapper.so|377aeeb6869d790b6ad655ec253ca0b503ddc8b8
+system_ext/lib64/libsignal.so|5595f5d7b6e7320572ec05ac199f951d141b516a
+system_ext/lib64/libsink.so|a0871d9428a41aea08d46d888fe7890eedab3eff
+system_ext/lib64/libsource.so|219c4bf3abc4b6a5a54feaabae5efe1959be0987
+system_ext/lib64/libvcodec_cap.so|2381985122bad7abdc287f477139b39731a1b218
+system_ext/lib64/libvcodec_capenc.so|2a9dd2edc46a17f402f342f09035ba5c25bb7ea2
+system_ext/lib64/libvt_avsync.so|186a5263b1be36e3f5ba47c0e8b40bca48a6b382
+system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so|d12f0aef8da477595468df3cebb5fa4f0a8770be
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|cdd9da0a0896031fd034069566bc80c332cdc9c1
+vendor/bin/hw/vtservice_hidl|047b26f80b338b7d0869840d243eefebe82d56f5
+vendor/etc/init/init.vtservice_hidl.rc|f2e992214ed5bb99c2c2a135cf1f0996dba8a8a0
+vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so|bb9ff554802e7bffb72cf24604109dafcf0019fc
+vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so|5e228669d2c575e38fc02a13404f31bc22494b87
+
+# Engineering - from TECNO-CK9n UP1A.231005.007
+system_ext/app/EngineerMode/EngineerMode.apk|4696c64877012b5edaf7acc3872d77925a6f1374
+system_ext/lib/libem_support_jni.so|5552e755099bbb64d7df3a5b914300881f34b145
+system_ext/lib64/libem_support_jni.so|df62aa420c0676be9d19b9917f41e1ae8363735a
+vendor/bin/em_hidl|bf23d25f7bd6af4bfd9f34c64609e469b8b1d4b2
+vendor/etc/init/em_hidl_user.rc|bdb5893df3e78d2d2adaf72bc7e56dfeee0be308
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so|444376addf581bfc66409ad39a73ffe498e4142e
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so|a13d422113c5bde4dc8a36336a6436e09cb37b86
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so|6cdc256e6559cba5f47b4aa1382d13790e91773c
+vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so|1c170c8e48c5cd52fd0bc903758be03c16e90091

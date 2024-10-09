@@ -1,4 +1,4 @@
-# Unpinned blobs from RMX2156_12_F.18
+# Unpinned blobs from RMX2155_12_F.11
 
 audio_dsp.img
 cam_vpu1.img
@@ -15,4 +15,4 @@ sspm.img
 tee.img
 
 # Prevent lk from setting sku prop: sed -i 's/sku/fku/' lk.img
-lk.img|7b075d1e5a15e079a34cce3d352c7581baeaa33b
+lk.img|2b3386b8f00b9f218b2a863867ef065e82418c3a

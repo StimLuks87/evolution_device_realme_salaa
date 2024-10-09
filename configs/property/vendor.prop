@@ -217,6 +217,7 @@ persist.vendor.volte_support=1
 persist.vendor.mtk.volte.enable=1
 persist.vendor.vilte_support=1
 persist.vendor.viwifi_support=1
+persist.radio.calls.on.ims=1
 ro.vendor.md_auto_setup_ims=1
 persist.vendor.mtk_ct_volte_support=3
 persist.dbg.ims_volte_enable=1
@@ -238,14 +239,11 @@ ro.crypto.volume.options=::v2
 vendor.thermal.config=thermal_info_config.json
 
 # LMK
-ro.lmk.kill_heaviest_task=true
-ro.lmk.kill_timeout_ms=100
-ro.lmk.psi_complete_stall_ms=150
 ro.lmk.swap_free_low_percentage=20
-ro.lmk.swap_util_max=90
 ro.lmk.thrashing_limit=30
 ro.lmk.thrashing_limit_decay=50
-ro.lmk.debug=false
+ro.lmk.swap_util_max=90
+ro.lmk.kill_timeout_ms=100
 
 # Sensors
 ro.vendor.mtk.sensor.support=yes
@@ -283,9 +281,9 @@ ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc16sp-pr6
 ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc16sp-pr6-V1.1
 
 # Oplus
-ro.oplus.version.base=20682.2.4.2024040112144924504550
-ro.oplus.image.base.version=20682.2.4.2024040112144924504550
-ro.oplus.image.vendor.version=.da5722b8
+ro.oplus.version.base=20682.2.4.2022111715201312548255
+ro.oplus.image.base.version=20682.2.4.2022111715201312548255
+ro.oplus.image.vendor.version=.a2aae3ba
 
 # WiFi
 ro.vendor.wifi.sap.interface=ap0

@@ -118,6 +118,26 @@ void set_device_props(void){
                 fingerprint="realme/RMX2155/RMX2155L1:12/SP1A.210812.016/Q.GDPR.bf75e7-1:user/release-keys";
                 market_name="realme 7";
                 break;
+            case 90:
+            case 92:
+                device="RMX2156L1";
+                model="RMX2156";
+                fingerprint="realme/RMX2156/RMX2156L1:12/SP1A.210812.016/Q.174ebd4_fa4d:user/release-keys";
+                market_name="realme Narzo 30 4G";
+                break;
+            case 143:
+                device="RMX2161L1";
+                model="RMX2161";
+                fingerprint="realme/RMX2156/RMX2156L1:12/SP1A.210812.016/Q.11e8c10-4e353:user/release-keys";
+                market_name="realme Narzo 20 Pro";
+                break;
+            case 145:
+            case 147:
+                device="RMX2163L1";
+                model="RMX2163";
+                fingerprint="realme/RMX2163T2/RMX2163L1:12/SP1A.210812.016/Q.bf75e7-1:user/release-keys";
+                market_name="realme Narzo 20 Pro";
+                break;
             default:
                 LOG(ERROR) << "Unknown operator found: " << operator_code;
                 device="";
