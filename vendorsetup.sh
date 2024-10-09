@@ -4,7 +4,7 @@
 git clone  https://github.com/StimLuks87/kernel_oplus_mt6785 kernel/realme/mt6785
 
 # Vendor Source:
-git clone https://github.com/StimLuks87/vendor_device_realme_salaa -b VIC vendor/realme/salaa
+git clone https://github.com/StimLuks87/vendor_device_realme_salaa -b VIC-F11 vendor/realme/salaa
 unzip vendor/realme/salaa/radio/md1img.zip -d vendor/realme/salaa/radio && rm vendor/realme/salaa/radio/md1img.zip
 unzip vendor/realme/salaa/proprietary/odm/lib64/libstfaceunlockppl.zip -d vendor/realme/salaa/proprietary/odm/lib64 && rm vendor/realme/salaa/proprietary/odm/lib64/libstfaceunlockppl.zip
 
