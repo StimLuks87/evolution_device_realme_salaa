@@ -55,7 +55,7 @@ on late-init
 
 # mount different fs start
 
-on charger
+on property:init.svc.vendor.charger=running
     write /sys/devices/platform/10012000.dvfsrc_top/helio-dvfsrc/dvfsrc_debug "kir_emi -1"
     chmod 0660 /dev/spm
     chown system system /dev/spm
