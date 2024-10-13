@@ -176,6 +176,18 @@ VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 # Vibrator
 TARGET_VIBRATOR_SUPPORTS_EFFECTS := true
 
+# MediaTek IMS
+TARGET_PROVIDES_MEDIATEK_IMS_STACK := true
+
+# MTK Rules
+TARGET_PROVIDES_MTK_PROPRIETARY := true
+
+# System as root
+BOARD_SUPPRESS_SECURE_ERASE := true
+
+# Charger
+BOARD_CHARGER_ENABLE_SUSPEND := true
+
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 include $(DEVICE_PATH)/sepolicy/SEPolicy.mk

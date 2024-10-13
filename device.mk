@@ -220,9 +220,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service \
     charger_res_images_vendor
 
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.0
-
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport \
