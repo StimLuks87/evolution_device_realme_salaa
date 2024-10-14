@@ -4,10 +4,7 @@
         <boolean name="carrier_volte_available_bool" value="false" />
         <boolean name="carrier_vt_available_bool" value="false" />
         <boolean name="carrier_wfc_ims_available_bool" value="false" />
-        <boolean name="config_oplus_support_viwifi_bool" value="false" />
-        <boolean name="config_oplus_evs_support_bool" value="false" />
         <boolean name="config_oplus_lte_preferred_for_second_slot" value="true" />
-        <boolean name="config_oplus_dual_lte_available_bool" value="true" />
         <boolean name="hide_lte_plus_data_icon_bool" value="false"/>
         <int name="lte_plus_threshold_bandwidth_khz_int" value="0"/>
     </carrier_config>
@@ -692,21 +689,20 @@
             <item value="23410" />
         </string-array>
     </carrier_config>
-    <carrier_config operator="Russia-MTS">
-        <boolean name="vonr_enabled_bool" value="true" />
+    <carrier_config operator="MTS">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="carrier_vt_available_bool" value="true" />
         <boolean name="config_oplus_support_viwifi_bool" value="true" />
-        <boolean name="config_oplus_evs_support_bool" value="false" />
+        <boolean name="config_oplus_evs_support_bool" value="true" />
+        <boolean name="support_video_conference_call_bool" value="true" />
         <boolean name="config_oplus_sms_ims_support_bool" value="true" />
         <boolean name="oplus_ussd_over_ims" value="true" />
-        <boolean name="support_video_conference_call_bool" value="true" />
         <string-array name="mccmnc" num="1">
             <item value="25001" />
         </string-array>
     </carrier_config>
-    <carrier_config operator="Russia-MEGAFON">
+    <carrier_config operator="MEGAFON">
         <boolean name="carrier_volte_available_bool" value="true" />
         <boolean name="carrier_wfc_ims_available_bool" value="true" />
         <boolean name="config_oplus_evs_support_bool" value="true" />
