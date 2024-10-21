@@ -45,9 +45,6 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# EPPE
-#TARGET_DISABLE_EPPE := true
-
 # Device Information
 PRODUCT_DEVICE := salaa
 PRODUCT_NAME := lineage_$(PRODUCT_DEVICE)

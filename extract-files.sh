@@ -76,6 +76,19 @@ function blob_fixup {
         vendor/lib/mediadrm/libwvdrmengine.so|vendor/lib/libwvhidl.so)
             "$PATCHELF" --replace-needed "libcrypto.so" "libcrypto_v33.so" "$2"
             ;;
+        vendor/lib*/hw/audio.primary.mediatek.so)
+            "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
+            "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
+            ;;
+        vendor/lib*/libalsautils-v32.so)
+            "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
+            ;;
+        odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc)
+            sed -i "8i\    task_profiles ProcessCapacityHigh MaxPerformance" "${2}"
+            ;;
     esac
 }
 

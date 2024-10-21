@@ -25,7 +25,7 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 $(call inherit-product, hardware/oplus/oplus-fwk/oplus-fwk.mk)
 
 # Priv Keys
--include vendor/evolution-priv/keys/keys.mk
+#-include vendor/evolution-priv/keys/keys.mk
 
 # Shipping API level
 BOARD_SHIPPING_API_LEVEL := 29
@@ -33,6 +33,7 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 
 # Update
 AB_OTA_UPDATER := false
+PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -180,6 +181,10 @@ PRODUCT_PACKAGES += \
     libion.vendor \
     libui.vendor
 
+PRODUCT_PACKAGES += \
+    libhwc2on1adapter \
+    libhwc2onfbadapter.vendor
+
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.brightness.low.gamma=true
 
@@ -219,6 +224,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service \
     charger_res_images_vendor
+
+# Lineage Health
+PRODUCT_PACKAGES += \
+    vendor.lineage.health-service.default
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -267,10 +276,6 @@ PRODUCT_PACKAGES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.salaa
-
-# Lineage Health
-PRODUCT_PACKAGES += \
-    vendor.lineage.health-service.default
 
 # Media
 PRODUCT_PACKAGES += \
@@ -522,13 +527,20 @@ PRODUCT_PACKAGES += \
     liblz4.vendor \
     libpiex \
     libjsoncpp.vendor \
-    libdumpstateutil.vendor \
     libsqlite.vendor \
-    libchrome.vendor
+    libchrome.vendor \
+    libmemunreachable.vendor \
+    libhidlbase_shim \
+    libruy.vendor \
+    libpcap.vendor \
+    libziparchive.vendor
 
 PRODUCT_PACKAGES += \
     libunwindstack.vendor \
     libutilscallstack.vendor
+
+PRODUCT_PACKAGES += \
+    PixelWallpapers2024
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
